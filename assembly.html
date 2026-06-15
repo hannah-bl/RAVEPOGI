@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800&display=swap" rel="stylesheet">
+<title>Suit Assembly</title>
+
+<link rel="stylesheet" href="assembly.css">
+</head>
+<body>
+
+<div class="hud">
+
+<h1>SUIT ASSEMBLY</h1>
+
+<div id="progressBox">
+ASSEMBLY: <span id="progress">0%</span>
+</div>
+
+<div class="assembly-area">
+
+<div class="silhouette">
+
+<div class="slot" id="helmet-slot"></div>
+
+<div class="slot" id="chest-slot"></div>
+
+<div class="slot" id="left-arm-slot"></div>
+
+<div class="slot" id="right-arm-slot"></div>
+
+<div class="slot" id="left-leg-slot"></div>
+
+<div class="slot" id="right-leg-slot"></div>
+
+</div>
+
+</div>
+
+<div class="partsTray">
+
+<img src="helmet.png"
+id="helmet"
+class="part"
+draggable="true">
+
+<img src="chest.png"
+id="chest"
+class="part"
+draggable="true">
+
+<img src="left-arm.png"
+id="left-arm"
+class="part"
+draggable="true">
+
+<img src="right-arm.png"
+id="right-arm"
+class="part"
+draggable="true">
+
+<img src="left-leg.png"
+id="left-leg"
+class="part"
+draggable="true">
+
+<img src="right-leg.png"
+id="right-leg"
+class="part"
+draggable="true">
+
+</div>
+
+<div id="completeBox">
+
+<h2>SUIT ONLINE</h2>
+
+<button id="nextBtn">
+CONTINUE TO JARVIS QUIZ
+</button>
+
+<button id="homeBtn">
+RETURN TO DASHBOARD
+</button>
+
+</div>
+
+<script src="assembly.js"></script>
+
+</body>
+</html>

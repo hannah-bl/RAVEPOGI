@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Repulsor Target Practice</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="repulsor.css">
+</head>
+<body>
+
+<div class="hud">
+
+    <main class="mainPanel">
+        <div class="topBar">
+            <div class="missionBox">
+                MISSION:
+                REPULSOR TARGET PRACTICE
+            </div>
+
+            <div class="levelBox">
+                TRAINING MODE
+            </div>
+        </div>
+
+        <section class="battlefield"
+        id="battlefield">
+            <div id="crosshair">
+                <div class="ring ring1"></div>
+                <div class="ring ring2"></div>
+                <div class="centerDot"></div>
+            </div>
+
+            <div id="beam"></div>
+            <div class="scanCircle"></div>
+            <div class="objectivePanel">
+
+                <h3>
+                    OBJECTIVES
+                </h3>
+                <p>
+                    Destroy 20 targets
+                </p>
+                <p>
+                    Accuracy above 60%
+                </p>
+            </div>
+
+            <div class="rightPanel">
+                <div class="statCard">
+                    <span>DESTROYED</span>
+                    <h2 id="score">
+                        0
+                    </h2>
+                </div>
+
+                <div class="statCard">
+                    <span>ACCURACY</span>
+                    <h2 id="accuracy">
+                        100%
+                    </h2>
+                </div>
+
+                <div class="statCard">
+                    <span>STATUS</span>
+                    <h2 id="status">
+                        ACTIVE
+                    </h2>
+                </div>
+            </div>
+
+            <div id="achievement">
+                ACHIEVEMENT UNLOCKED
+            </div>
+
+    <div class="button-group">
+    <button id="homeBtn">
+        RETURN TO DASHBOARD
+    </button>
+
+    <button id="nextBtn">
+        CONTINUE TO NEXT MISSION
+    </button>
+</div> 
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="repulsor.js"></script>
+
+</body>
+</html>

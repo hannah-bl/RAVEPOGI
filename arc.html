@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arc Reactor Charge</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="arc.css">
+
+</head>
+<body>
+
+<div class="scanlines"></div>
+<div class="container">
+    <h1>ARC REACTOR CHARGE</h1>
+    <p class="subtitle">
+        Tap the reactor core repeatedly
+        to reach full power.
+    </p>
+
+    <div id="reactorArea">
+    <div class="ring ring1"></div>
+    <div class="ring ring2"></div>
+    <div class="ring ring3"></div>
+    <img src="arc.png" id="reactor">
+</div>
+
+<div id="percent">
+    0%
+</div>
+
+    <div class="progress">
+        <div id="progressFill"></div>
+    </div>
+
+    <div id="status">
+        REACTOR OFFLINE
+    </div>
+
+    <div class="button-group">
+
+    <button id="homeBtn">
+        RETURN TO DASHBOARD
+    </button>
+
+    <button id="nextBtn">
+        CONTINUE TO NEXT MISSION
+    </button>
+
+</div> 
+</div>
+
+<script src="arc.js"></script>
+
+</body>
+</html>

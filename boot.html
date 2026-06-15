@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1280">
+  <link rel="stylesheet" href="boot.css">
+  <title>Access Page</title>
+</head>
+
+<body>
+  <div class= "content">
+    <div class= "stark-logo">
+      <img src= "stark.png">
+    </div>
+    
+    <div class= "reactor">
+      <img src= "arc.png">
+    </div>
+    
+    <div class= "text">
+      <h3>SYSTEM ACCESS</h3>
+      <h5>AUTHORIZED PERSONNEL ONLY</h5>
+    </div>
+    
+    <div class= "password">
+      <input type= "password" id= "password" placeholder= "ENTER ACCESS CODE">
+      <button onclick= "checkPassword()">ACCESS SYSTEM</button>
+      <p id="error" style="color:#ff4545;"></p>
+    </div>
+    
+    <div>
+      <p>UNAUTHORIZED ACCESS IS PROHIBITED</p>
+    </div>
+  </div>
+
+  <script>
+    function checkPassword() {
+    const password = document.getElementById("password").value;
+
+    if (password === "06152005") {
+        window.location.href = "home.html";
+    } else {
+        document.getElementById("error").textContent = "ACCESS DENIED.";
+    }
+}
+</script>
+</body>
+
+</html>

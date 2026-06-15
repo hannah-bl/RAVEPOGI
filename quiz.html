@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Birthday Hero</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="quiz.css">
+
+</head>
+<body>
+
+<div class="scanlines"></div>
+<div class="container">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <img src="stark.png" alt="Stark Industries Logo">
+            <span>J.A.R.V.I.S. v7.2.1</span>
+        </div>
+
+        <ul class="menu">
+            <li class="active"><a href="home.html" class="menu-link">DASHBOARD</a></li>
+            <li><a href="hero.html" class="menu-link">HERO DOSSIER</a></li>
+            <li><a href="mission.html" class="menu-link">MISSION TIMELINE</a></li>
+            <li><a href="games.html" class="menu-link">MINI GAMES</a></li>
+            <li><a href="secret.html" class="menu-link">SECRET DATABASE</a></li>
+        </ul>
+
+        <div class="status-card">
+
+            <h4>SYSTEM STATUS</h4>
+
+            <p class="online">ONLINE</p>
+
+            <div class="graph">
+                <div class="graph-line"></div>
+            </div>
+
+            <span>98%</span>
+
+        </div>
+
+    </aside>
+
+    <div class="jarvis-container">
+
+        <div class="hud-corner tl"></div>
+        <div class="hud-corner tr"></div>
+        <div class="hud-corner bl"></div>
+        <div class="hud-corner br"></div>
+
+        <h1 class="jarvis-title">
+            J.A.R.V.I.S QUIZ
+        </h1>
+
+        <div class="question-box">
+            <div id="question"></div>
+        </div>
+
+        <div id="answers"></div>
+
+        <button id="nextBtn">
+            ACCESS SECRET DATABASE
+        </button>
+
+        <div id="result">
+
+            <h2>ACHIEVEMENT UNLOCKED</h2>
+
+            <div id="scoreDisplay"></div>
+
+            <div class="rank" id="rank"></div>
+
+        </div>
+
+    </div>
+
+    <script src="quiz.js"></script>
+
+</body>

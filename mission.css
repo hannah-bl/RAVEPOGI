@@ -1,0 +1,251 @@
+*{
+    margin:0px;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Orbitron',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background: url("bg5.png");
+    background-size:cover;
+    background-position:center;
+    overflow:hidden;
+    color:white;
+}
+
+.scanlines{
+    position:fixed;
+    inset:0;
+    background:
+    repeating-linear-gradient(
+        transparent,
+        transparent 2px,
+        rgba(0,255,255,.02) 3px
+    );
+}
+
+.container{
+    display:flex;
+    height:100vh;
+}
+
+.sidebar{
+    width:280px;
+    padding:30px;
+    border-right:
+    1px solid rgba(0,217,255,.15);
+    backdrop-filter:blur(8px);
+}
+
+.logo img{
+    width:100%;
+    height:100%;
+    display:block;
+    margin-top: -40px;
+    margin-bottom: -100px;
+}
+
+.logo span{
+    margin-left: 40px;
+    color:#00d9ff;
+    font-size:12px;
+    font-weight:900;
+    text-shadow:
+    0 0 10px rgba(0,217,255,.5);
+}
+
+.menu{
+    list-style:none;
+    margin-top:50px;
+}
+
+.menu li a{
+    display:block;
+    width:100%;
+    height:100%;
+    text-decoration:none;
+    color:inherit;
+}
+
+a{
+    text-decoration:none !important;
+}
+
+.menu li{
+    text-decoration:none;
+    margin-bottom:18px;
+    padding:16px;
+    border:
+    1px solid rgba(0,217,255,.15);
+    cursor:pointer;
+    transition:.3s;
+}
+
+.menu li:hover,
+.menu li.active{
+    border-color:#00d9ff;
+    box-shadow:
+    0 0 15px rgba(0,217,255,.5);
+    color:#00d9ff;
+}
+
+.status-card{
+    margin-top:60px;
+    border:
+    1px solid rgba(0,217,255,.15);
+    padding:20px;
+}
+
+.status-card h4{
+    font-size:14px;
+}
+
+.online{
+    margin-top:10px;
+    color:#00d9ff;
+    font-size:24px;
+    letter-spacing:3px;
+}
+
+.graph{
+    height:80px;
+    margin-top:15px;
+    border:
+    1px solid rgba(255,255,255,.1);
+    position:relative;
+}
+
+.graph-line{
+    width:100%;
+    height:2px;
+    position:absolute;
+    top:50%;
+    background:#00d9ff;
+    box-shadow:
+    0 0 10px #00d9ff;
+}
+
+.status-card span{
+    display:block;
+    text-align:right;
+    margin-top:15px;
+    color:#00d9ff;
+}
+
+
+.main{
+    flex:1;
+    padding:50px;
+}
+
+.main h1{
+    text-align:center;
+    color:#00d9ff;
+    margin-bottom:30px;
+    text-shadow:
+    0 0 15px #00d9ff;
+}
+
+.briefing{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    padding:25px;
+    margin-bottom:40px;
+    background:
+    rgba(0,0,0,.3);
+    border:
+    1px solid rgba(0,217,255,.25);
+    backdrop-filter:blur(8px);
+}
+
+.briefing h2{
+    color:#00d9ff;
+    margin-bottom:15px;
+}
+
+.briefing p{
+    margin-bottom:10px;
+    color:#d6f7ff;
+}
+
+.mission-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(2,1fr);
+    gap:25px;
+}
+
+.mission-card{
+    position:relative;
+    text-decoration:none;
+    color:white;
+    padding:25px;
+    background:
+    rgba(0,0,0,.35);
+    border:
+    1px solid rgba(0,217,255,.25);
+    backdrop-filter:blur(8px);
+    transition:.3s;
+}
+
+.mission-card:hover{
+    transform:translateY(-5px);
+    border-color:#00d9ff;
+    box-shadow:
+    0 0 20px rgba(0,217,255,.35);
+}
+
+.status{
+    position:absolute;
+    top:15px;
+    right:15px;
+    color:#ffd700;
+    font-size:11px;
+}
+
+.complete{
+    color:#00ff88;
+}
+
+.locked-status{
+    color:#ff4d4d;
+}
+
+.mission-card h3{
+    color:#00d9ff;
+    margin-bottom:10px;
+    font-size:14px;
+}
+
+.mission-card h2{
+    margin-bottom:10px;
+    font-size:22px;
+}
+
+.mission-card p{
+    color:#d6f7ff;
+}
+
+.locked{
+    opacity:.6;
+}
+
+.mission-card.unlocked{
+
+    opacity:1;
+
+    border-color:#00ff88;
+
+    box-shadow:
+    0 0 20px rgba(0,255,136,.4);
+}
+
+.mission-card.unlocked:hover{
+
+    border-color:#00ff88;
+
+    box-shadow:
+    0 0 30px rgba(0,255,136,.7);
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mission Guide</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="mission.css">
+
+</head>
+<body>
+
+<div class="scanlines"></div>
+<div class="container">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <img src="stark.png" alt="Stark Industries Logo">
+            <span>J.A.R.V.I.S. v7.2.1</span>
+        </div>
+
+        <ul class="menu">
+            <li class="active"><a href="home.html" class="menu-link">DASHBOARD</a></li>
+            <li><a href="hero.html" class="menu-link">HERO DOSSIER</a></li>
+            <li><a href="mission.html" class="menu-link">MISSION TIMELINE</a></li>
+            <li><a href="games.html" class="menu-link">MINI GAMES</a></li>
+            <li><a href="secret.html" class="menu-link">SECRET DATABASE</a></li>
+        </ul>
+
+        <div class="status-card">
+
+            <h4>SYSTEM STATUS</h4>
+
+            <p class="online">ONLINE</p>
+
+            <div class="graph">
+                <div class="graph-line"></div>
+            </div>
+
+            <span>98%</span>
+
+        </div>
+
+    </aside>
+    <main class="main">
+
+        <h1>CLASSIFIED ACCESS TERMINAL</h1>
+        <div class="briefing">
+            <h2>J.A.R.V.I.S. BRIEFING</h2>
+            <p>
+                Access to the Birthday Hero Database
+                is currently restricted.
+            </p>
+
+            <p>
+                Complete all required missions
+                to unlock the classified files.
+            </p>
+        </div>
+
+        <div class="mission-grid">
+            <a href="hero.html" class="mission-card">
+                <span class="status complete">
+                    COMPLETE
+                </span>
+                <h3>MISSION 01</h3>
+                <h2>HERO DOSSIER</h2>
+                <p>
+                    Access the Hero Profile.
+                </p>
+            </a>
+
+            <a href="games.html" class="mission-card">
+                <span class="status" id="arcStatus">
+                    REQUIRED
+                </span>
+                <h3>MISSION 02</h3>
+                <h2>ARC REACTOR CHARGE</h2>
+                <p>
+                    Reach full reactor power.
+                </p>
+            </a>
+
+            <a href="games.html" class="mission-card">
+                <span class="status" id="repulsorStatus">
+                    REQUIRED
+                </span>
+                <h3>MISSION 03</h3>
+                <h2>REPULSOR TRAINING</h2>
+                <p>
+                    Eliminate all targets.
+                </p>
+            </a>
+
+            <a href="games.html" class="mission-card">
+                <span class="status" id="assemblyStatus">
+                    REQUIRED
+                </span>
+                <h3>MISSION 04</h3>
+                <h2>SUIT ASSEMBLY</h2>
+                <p>
+                    Complete armor integration.
+                </p>
+            </a>
+
+            <a href="games.html" class="mission-card">
+                <span class="status" id="quizStatus">
+                    REQUIRED
+                </span>
+                <h3>MISSION 05</h3>
+                <h2>J.A.R.V.I.S. QUIZ</h2>
+                <p>
+                    Pass the intelligence test.
+                </p>
+            </a>
+
+            <a href="#" class="mission-card locked">
+                <span class="status locked-status">
+                    LOCKED
+                </span>
+                <h3>FINAL ACCESS</h3>
+                <h2>CLASSIFIED MESSAGE</h2>
+                <p>
+                    Complete all missions to unlock.
+                </p>
+            </a>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="mission.js"></script>
+</body>
+</html>

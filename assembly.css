@@ -1,0 +1,154 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Orbitron,sans-serif;
+}
+
+body{
+background:#050d18;
+background: url("bg5.png");
+background-size:cover;
+background-position:center;
+height:100vh;
+overflow:hidden;
+color:white;
+}
+
+.hud{
+display:flex;
+flex-direction:column;
+align-items:center;
+padding-top:20px;
+}
+
+h1{
+color:cyan;
+margin-bottom:15px;
+}
+
+.slot{
+    position:absolute;
+    border:2px dashed cyan;
+    background:rgba(0,255,255,.08);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+}
+
+#progressBox{
+margin-bottom:20px;
+font-size:22px;
+}
+
+.assembly-area{
+position:relative;
+width:500px;
+height:600px;
+}
+
+.silhouette{
+position:relative;
+width:100%;
+height:100%;
+margin:auto;
+}
+
+.slot{
+position:absolute;
+border:2px dashed cyan;
+background:rgba(0,255,255,.08);
+}
+
+#helmet-slot{
+    width:130px;
+    height:130px;
+    left:185px;
+    top:35px;
+}
+
+#chest-slot{
+    width:180px;
+    height:190px;
+    left:160px;
+    top:145px;
+}
+
+#left-arm-slot{
+    width:75px;
+    height:250px;
+    left:120px;
+    top:150px;
+}
+
+#right-arm-slot{
+    width:75px;
+    height:270px;
+    right:120px;
+    top:120px;
+}
+
+#left-leg-slot{
+    width:120px;
+    height:350px;
+    left:160px;
+    top:315px;
+}
+
+#right-leg-slot{
+    width:120px;
+    height: 350px;
+    right:155px;
+    top:300px;
+}
+
+.partsTray{
+position:absolute;
+bottom:20px;
+left:50%;
+transform:translateX(-50%);
+display:flex;
+gap:15px;
+}
+
+.part{
+width:90px;
+cursor:grab;
+}
+
+#completeBox{
+display:none;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:#08131d49;
+padding:30px;
+border:2px solid cyan;
+text-align:center;
+}
+
+#completeBox h2{
+color:#00ff88;
+font-size:20px;
+text-shadow:
+0 0 10px #00ff88;
+}
+
+button{
+border:2px solid cyan;
+background:#08131da4;
+margin-top:15px;
+padding:12px 25px;
+cursor:pointer;
+font-weight:bold;
+}
+
+#homeBtn, 
+#nextBtn{
+background:#00d9ff;
+color:#050d18;
+}

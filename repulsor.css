@@ -1,0 +1,294 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Orbitron',sans-serif;
+}
+
+body{
+height:100vh;
+overflow:hidden;
+background:
+radial-gradient(
+circle at center,
+rgba(0,180,255,.15),
+transparent 40%),
+#020814;
+color:white;
+background-image:url("bg5.png");
+background-size:cover;
+background-position:center;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+linear-gradient(
+rgba(0,255,255,.05) 1px,
+transparent 1px),
+linear-gradient(
+90deg,
+rgba(0,255,255,.05) 1px,
+transparent 1px);
+background-size:50px 50px;
+pointer-events:none;
+}
+
+.hud{
+display:flex;
+height:100vh;
+}
+
+.mainPanel{
+flex:1;
+display:flex;
+flex-direction:column;
+}
+
+.topBar{
+display:flex;
+justify-content:space-between;
+padding:20px;
+}
+
+.missionBox,
+.levelBox{
+padding:15px 20px;
+border:1px solid cyan;
+background:
+rgba(0,20,40,.7);
+}
+
+.battlefield{
+flex:1;
+position:relative;
+overflow:hidden;
+}
+
+.scanCircle{
+position:absolute;
+width:500px;
+height:500px;
+border-radius:50%;
+border:2px solid rgba(0,255,255,.2);
+left:50%;
+top:50%;
+transform:
+translate(-50%,-50%);
+animation:
+pulse 3s infinite;
+}
+
+.button-group{
+    position:absolute;
+    left:50%;
+    bottom:30px;
+    transform:translateX(-50%);
+    z-index:2000;
+    margin-top:25px;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+}
+
+#homeBtn,
+#nextBtn{
+    display:none;
+    padding:15px 30px;
+    border:none;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+}
+
+#homeBtn{
+    background:
+    rgba(255,255,255,.1);
+    color:white;
+    border:
+    1px solid #00d9ff;
+}
+
+#homeBtn:hover{
+    background:#00d9ff;
+    color:black;
+}
+
+#nextBtn{
+    background:#00d9ff;
+    color:black;
+}
+
+@keyframes pulse{
+
+50%{
+transform:
+translate(-50%,-50%)
+scale(1.08);
+}
+}
+
+.rightPanel{
+position:absolute;
+right:20px;
+top:20px;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.statCard{
+width:200px;
+padding:15px;
+background:
+rgba(0,20,40,.8);
+border:1px solid cyan;
+}
+
+.statCard span{
+font-size:12px;
+}
+
+.statCard h2{
+margin-top:5px;
+}
+
+.objectivePanel{
+position:absolute;
+left:20px;
+top:20px;
+padding:15px;
+width:250px;
+background:
+rgba(0,20,40,.8);
+border:1px solid cyan;
+}
+
+.objectivePanel h3{
+margin-bottom:10px;
+}
+
+.objectivePanel p{
+margin-bottom:8px;
+}
+
+#crosshair{
+position:absolute;
+width:120px;
+height:120px;
+pointer-events:none;
+transform:
+translate(-50%,-50%);
+z-index:999;
+}
+
+.ring{
+position:absolute;
+border-radius:50%;
+border:2px solid cyan;
+}
+
+.ring1{
+inset:0;
+animation:
+spin 4s linear infinite;
+}
+
+.ring2{
+inset:20px;
+animation:
+spinReverse 3s linear infinite;
+}
+
+.centerDot{
+position:absolute;
+width:10px;
+height:10px;
+background:cyan;
+border-radius:50%;
+left:50%;
+top:50%;
+transform:
+translate(-50%,-50%);
+}
+
+@keyframes spin{
+from{
+transform:rotate(0deg);
+}
+
+to{
+transform:rotate(360deg);
+}
+}
+
+@keyframes spinReverse{
+
+from{
+transform:rotate(360deg);
+}
+
+to{
+transform:rotate(0deg);
+}
+}
+
+.target{
+position:absolute;
+width:80px;
+height:80px;
+border-radius:50%;
+cursor:pointer;
+background:
+radial-gradient(
+circle,
+#ffb366,
+#ff3300);
+box-shadow:
+0 0 25px #ff5500;
+}
+
+.target::before{
+content:"";
+position:absolute;
+inset:18px;
+border-radius:50%;
+border:2px solid white;
+}
+
+.explosion{
+animation:
+explode .4s forwards;
+}
+
+@keyframes explode{
+to{
+transform:scale(2);
+opacity:0;
+}
+}
+
+#beam{
+position:absolute;
+height:4px;
+background:#ff5500;
+display:none;
+box-shadow:
+0 0 20px #ff5500;
+transform-origin:left center;
+pointer-events:none;
+z-index:500;
+}
+
+#achievement{
+position:absolute;
+top:20px;
+left:50%;
+transform:translateX(-50%);
+padding:15px 25px;
+border:1px solid cyan;
+background:#08131d;
+display:none;
+}

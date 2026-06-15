@@ -1,0 +1,206 @@
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:url("bg6.png");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    font-family:'Orbitron',sans-serif;
+
+}
+
+.container{
+
+    width:90%;
+
+    max-width:900px;
+
+    text-align:center;
+
+}
+
+.protocol{
+
+    color:#ff6868;
+
+    letter-spacing:4px;
+
+    margin-bottom:30px;
+
+    font-size:12px;
+
+}
+
+h1{
+
+    color:#00d9ff;
+
+    font-size:60px;
+
+    letter-spacing:8px;
+
+}
+
+h2{
+
+    margin-top:15px;
+
+    font-size:24px;
+
+    font-weight:400;
+
+    letter-spacing:5px;
+
+}
+
+.candles{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:80px;
+
+    margin-top:60px;
+
+}
+
+.candle{
+
+    color:#00d9ff;
+
+    font-size:48px;
+
+}
+
+.flame{
+
+    width:14px;
+
+    height:22px;
+
+    background:#ffb300;
+
+    margin:auto;
+
+    margin-bottom:10px;
+
+    border-radius:50%;
+
+    box-shadow:
+    0 0 20px orange;
+
+    animation:flicker .5s infinite;
+
+}
+
+@keyframes flicker{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(.9);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+.cake{
+
+    margin-top:30px;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.cake img{
+
+    width:250px;
+
+    height:auto;
+
+    display:block;
+
+}
+
+.cake img{
+
+    width:180px;
+
+    height:auto;
+
+}
+
+#blowBtn{
+
+    margin-top:30px;
+
+    padding:15px 50px;
+
+    border:1px solid #00d9ff;
+
+    background:transparent;
+
+    color:#00d9ff;
+
+    font-family:'Orbitron',sans-serif;
+
+    cursor:pointer;
+
+    letter-spacing:4px;
+
+}
+
+#blowBtn:hover{
+
+    box-shadow:
+    0 0 15px #00d9ff;
+
+}
+
+#status{
+
+    margin-top:30px;
+
+    color:#00d9ff;
+
+    letter-spacing:3px;
+
+}
+
+#dashboardBtn{
+
+    margin-top:40px;
+
+    padding:15px 40px;
+
+    border:none;
+
+    background:#00d9ff;
+
+    color:#02111f;
+
+    font-family:'Orbitron',sans-serif;
+
+    cursor:pointer;
+
+    letter-spacing:3px;
+
+}

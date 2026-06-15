@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mini Games</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="games.css">
+
+</head>
+<body>
+
+<div class="scanlines"></div>
+<div class="container">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <img src="stark.png" alt="Stark Industries Logo">
+            <span>J.A.R.V.I.S. v7.2.1</span>
+        </div>
+
+        <ul class="menu">
+            <li class="active"><a href="home.html" class="menu-link">DASHBOARD</a></li>
+            <li><a href="hero.html" class="menu-link">HERO DOSSIER</a></li>
+            <li><a href="mission.html" class="menu-link">MISSION TIMELINE</a></li>
+            <li><a href="games.html" class="menu-link">MINI GAMES</a></li>
+            <li><a href="secret.html" class="menu-link">SECRET DATABASE</a></li>
+        </ul>
+
+        <div class="status-card">
+
+            <h4>SYSTEM STATUS</h4>
+
+            <p class="online">ONLINE</p>
+
+            <div class="graph">
+                <div class="graph-line"></div>
+            </div>
+
+            <span>98%</span>
+
+        </div>
+
+    </aside>
+
+    <main class="main">
+        <h1>MISSION SIMULATIONS</h1>
+        
+        <div class="games-grid">
+    <a href="arc.html" class="game-card">
+
+    <span id="arcReactorStatus">
+
+        READY
+
+    </span>
+
+    <div class="game-info">
+
+        <h2>MINI GAME 01</h2>
+
+        <h3>ARC REACTOR CHARGE</h3>
+
+        <p>
+            Reach 100% reactor power.
+        </p>
+    
+        <span
+        id="arcReactorStatus"
+        class="game-status">
+         READY
+</span>
+    </div>
+
+    <img src="arc.png">
+
+</a>
+
+    <a href="repulsor.html" class="game-card">
+        <div class="game-info">
+            <h2>MINI GAME 02</h2>
+            <h3>REPULSOR TARGET PRACTICE</h3>
+            <p>
+                Destroy all enemy targets.
+            </p>
+        </div>
+
+        <img src="m2.jpg">
+    </a>
+
+    <a href="assembly.html" class="game-card">
+        <div class="game-info">
+            <h2>MINI GAME 03</h2>
+            <h3>SUIT ASSEMBLY</h3>
+            <p>
+                Complete the armor integration.
+            </p>
+        </div>
+
+        <img src="m3.jpg">
+    </a>
+
+    <a href="quiz.html" class="game-card">
+        <div class="game-info">
+            <h2>MINI GAME 04</h2>
+            <h3>J.A.R.V.I.S. QUIZ</h3>
+            <p>
+                Pass the intelligence assessment.
+            </p>
+        </div>
+
+        <img src="m4.png">
+    </a>
+
+</div>
+
+    </main>
+
+</div>
+
+<script src="games.js"></script>
+
+</body>
+</html>
